@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>El tiempo</title>
+  <meta name="author" content="David Jiménez">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/estilos.css">
+
+  <script src="tiempo.js"></script>
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns" style="margin-top: 25%">
+        <h4>El tiempo en tu zona</h4>
+        <input id="input" type="text" class="u-full-width" placeholder="Introduce la provincia para ver el tiempo">
+        <button id="boton" class="button u-full-width">Buscar</button>
+
+        <div id="imagenCargar">
+          <img src="cargar.gif" alt="carga">
+        </div>
+
+        <table class="u-full-width">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Descripción</th>
+              <th>Máxima</th>
+              <th>Mínima</th>
+            </tr>
+          </thead>
+          <tbody id="tbody">
+          </tbody>
+        </table>
+
+
+      </div>
+    </div>
+  </div>
+
+  <footer>
+
+    <p>Desarrollado por David Jiménez Villarejo &copy; 2020</p>
+    <p>Diseño de <a href="http://getskeleton.com/" target="_blank">Skeleton</a></p>
+    <p>API utilizada <a href="https://www.el-tiempo.net/">El tiempo</a></p>
+  </footer>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
